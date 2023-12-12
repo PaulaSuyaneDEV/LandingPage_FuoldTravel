@@ -7,6 +7,7 @@
 body {
     background-color: #bfdbf7;
     color: white;
+    background-color: #022b3a;
 }
 
 header {
@@ -14,7 +15,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    background-color: #022b3a;
     color: white;
     height: 10vh;
 }
@@ -39,6 +39,7 @@ header a {
 main {
     display: flex;
     height: 80vh;
+    background-color: #bfdbf7;
 }
 
 .box1 {
@@ -82,7 +83,7 @@ button {
 
 .img1{
     width: 480px;
-    height: 530px;
+    height: 500px;
     margin: auto;
     display: block;
     padding-left: 13px;
@@ -111,4 +112,56 @@ footer p {
 
 footer a {
     color: white;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+        height: 190vh;
+    }
+    .box1 {
+        width: 100%;
+        padding: 0;
+    }
+    .box1 h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .box1 h2 {
+        font-size: 16px;
+        text-align: justify;
+        padding: 40px;
+        margin: 0;
+    }
+    .box1 button {
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 8px 15px;
+    }
+    .box2 {
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .box2 .img1 {
+
+        height: 50vh;
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    .box2 .img2 , .box2 .img3 {
+        width: 90vw;
+        display: block;
+        margin: 10px auto;
+        padding: 0 14px;
+        height: 30vh;
+    }
+    .sub-box2 {
+        padding: 0;
+        display: block;
+        margin: auto;
+    }
 }
